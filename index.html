@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <title> Escola DNC </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Essas informações desse div, é a parte superior da pagina -->
+    <div id="menu-superior">
+        <script src="index.js"></script>
+    
+        <a href="https://ed.escoladnc.com.br"> <img src="./Imagens/logo.svg" id="logo"  alt="ERRO"> </a>
+        
+        <h1 id="titulo-menusuperior">Dê os primeiros passos da<br> 
+            sua carreira em Tecnologia</h1>
+    
+        <p id="texto-menusuperior">Inscreva-se no curso gratuito de Introdução à<br> 
+            Tecnologia da DNC School e aprenda os principais<br> 
+            fundamentos para construir experiências efetivas.</p>
+    </div>
+
+    <!-- Essa segunda div é sobre as informações de certificado horas e aulas gravdas--->
+    <div id="menu-informacional">
+        
+        <p class="textoinformativo"> <img src="./icons/certificado.svg" id="certificado" class="icone" alt="ERRO">Certificado de conclusão</p>
+        <p class="textoinformativo"> <img src="./icons/horas.svg" id="horas" class="icone" alt="ERRO" >4 horas de conteúdo </p>
+        <p class="textoinformativo"> <img src="./icons/gravadas.svg" id="gravadas" class="icone" alt="ERRO">Aulas online gravadas</p>
+    
+    </div>
+    
+    <!--Essa terceira div, é sobre o depoimento (video)-->
+    <div id="secaovideo">
+        <iframe id="video" width="502" height="283" src="https://www.youtube.com/embed/ITxGkd9h4n4" title="DNC - A escola inovadora que forma profissionais de alta perfomance" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div id="textovideo">
+            <h1 id="titulo-video">Aprenda com especialistas e<br> comece seu primeiro projeto</h1>
+            <br><br>
+            <p id="texto-video">Conheça o processo de desenvolvimento e entenda como utilizar<br>
+               os principais métodos e ferramentas da área para resolver<br>
+               problemas complexos.<br><br>
+    
+               Conquiste seu certificado e desenvolva um projeto prático para<br>
+               aplicar seus conhecimentos.
+            </p>
+        </div>
+        
+    </div>
+
+    <!--Essa terceira DIV é sobre o carrossel-->
+    <div id="carrosel" >
+        <h1 id="titulo-carrosel">Mais de 500 alunos já iniciaram seus estudos</h1>
+        <div id="cards" >
+            <img class="seta" id="seta-esquerda" onclick="RolarParaEsquerda()" src="./card/seta-esquerda.svg" alt="">
+            <img id="leonardo" class="card" src="./card/CARD1.svg" alt="" srcset="">
+            <img id="samanta" class="card" src="./card/CARD2.svg" alt="" srcset="">
+            <img id="bruna" class="card" src="./card/CARD3.svg" alt="" srcset="">
+            <img class="seta" id="seta-direita" onclick="RolarParaDireita()" src="./card/seta-direita.svg" alt="">            
+        </div>
+    </div>
+
+     <!--Essa quarta DIV é prara o formulario-->   
+     <div id="formulario">
+        <h1 id="titulo-formulario" >Comece agora mesmo e dê o próximo passo da sua carreira</h1>
+        <form id="caixas" action="https://api.sheetmonkey.io/form/qugwoHyRiNVnvdfJGTvKBc" method="post">
+            <input  type="text" placeholder=" Nome" name="Name" required><br>
+            <input  type="email" placeholder="Email" name="Email" required><br>
+            <input  type="number" placeholder="Telefone" name="fone" required><br>
+            <input type="hidden" name="Created" value="x-sheetmonkey-current-date-time" />
+
+            <button type="submit">Acesse a ementa grátis</button>
+        </form>
+
+
+    </div> 
+    
+        
+
+    <script src="index.js"></script>
+
+
+
+</body>
+</html>
